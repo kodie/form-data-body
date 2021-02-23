@@ -1,6 +1,6 @@
 {
   "name": "form-data-body",
-  "version": "0.0.1",
+  "version": "0.1.0",
   "description": "A tiny, dependency-free node module for generating a form's multipart/form-data body for a POST request.",
   "keywords": [
     "body",

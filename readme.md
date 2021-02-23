@@ -8,6 +8,8 @@
 
 A tiny, dependency-free node module for generating a form's multipart/form-data body for a POST request.
 
+This is meant to be a simple, no frills module for generating a string to send as the body for a POST request simulating a form submission. If you need something with more bells and whistles, check out the [form-data](https://github.com/form-data/form-data) module.
+
 ## Installation
 
 ```shell
