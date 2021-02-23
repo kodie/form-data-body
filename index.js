@@ -4,16 +4,16 @@ module.exports = (fields, boundary) => {
   let body = ''
 
   if (!boundary) {
-    bounary = module.exports.generateBoundary()
+    boundary = module.exports.generateBoundary()
   } else if (typeof boundary !== 'string') {
     throw new TypeError('`boundary` parameter should be a string.')
   }
 
-  if (fields && typeof fields === 'object') {
+  if (fields && fields.constructor === Object) {
     for (const fieldName in fields) {
-      let field = fields[fieldName]
+      const field = fields[fieldName]
 
-      if (typeof field === 'object') {
+      if (field && field.constructor === Object) {
         if (!field.name || typeof field.name !== 'string') {
           throw new TypeError(`\`fields.${fieldName}.name\` should be a string.`)
         } else if (!field.type || typeof field.type !== 'string') {

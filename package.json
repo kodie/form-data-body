@@ -1,7 +1,7 @@
 {
   "name": "form-data-body",
   "version": "0.0.1",
-  "description": "A tiny, dependency free node module for generating a form's multipart/form-data body for a POST request.",
+  "description": "A tiny, dependency-free node module for generating a form's multipart/form-data body for a POST request.",
   "keywords": [
     "body",
     "data",
@@ -28,5 +28,12 @@
   },
   "homepage": "https://github.com/kodie/form-data-body",
   "license": "MIT",
-  "main": "index.js"
+  "main": "index.js",
+  "scripts": {
+    "test": "standard && ava"
+  },
+  "devDependencies": {
+    "ava": "^3.15.0",
+    "standard": "^16.0.3"
+  }
 }
