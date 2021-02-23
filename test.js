@@ -4,6 +4,7 @@ const formDataBody = require('.')
 const exampleFields = {
   name: 'My test post',
   description: 'This is just a test post',
+  items: ['First Item', 'Second Item'],
   image: {
     name: 'hello.jpg',
     type: 'image/jpeg',
@@ -19,6 +20,14 @@ My test post\r
 Content-Disposition: form-data; name="description"\r
 \r
 This is just a test post\r
+--{boundary}\r
+Content-Disposition: form-data; name="items[]"\r
+\r
+First Item\r
+--{boundary}\r
+Content-Disposition: form-data; name="items[]"\r
+\r
+Second Item\r
 --{boundary}\r
 Content-Disposition: form-data; name="image"; filename="hello.jpg"\r
 Content-Type: image/jpeg\r
@@ -72,14 +81,14 @@ test('invalid file field values', t => {
   }, { instanceOf: TypeError })
 
   t.throws(() => {
-    formDataBody({ file: { name: [], type: '', data: '' } })
+    formDataBody({ file: { name: null, type: '', data: '' } })
   }, { instanceOf: TypeError })
 
   t.throws(() => {
-    formDataBody({ file: { name: '', type: [], data: '' } })
+    formDataBody({ file: { name: '', type: null, data: '' } })
   }, { instanceOf: TypeError })
 
   t.throws(() => {
-    formDataBody({ file: { name: '', type: '', data: [] } })
+    formDataBody({ file: { name: '', type: '', data: null } })
   }, { instanceOf: TypeError })
 })

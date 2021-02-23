@@ -23,6 +23,7 @@ const formDataBody = require('form-data-body')
 const fields = {
   name: 'My test post',
   description: 'This is just a test post',
+  items: ['First Item', 'Second Item'],
 
   // Files should be an object with the name, type, and data set to strings
   image: {
@@ -50,6 +51,14 @@ My test post
 Content-Disposition: form-data; name="description"
 
 This is just a test post
+----------------------------071517909670537006900435
+Content-Disposition: form-data; name="items[]"
+
+First Item
+----------------------------071517909670537006900435
+Content-Disposition: form-data; name="items[]"
+
+Second Item
 ----------------------------071517909670537006900435
 Content-Disposition: form-data; name="image"; filename="hello.jpg"
 Content-Type: image/jpeg
