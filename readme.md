@@ -37,14 +37,14 @@ const header = {
 const body = formDataBody(fields, boundary)
 ```
 
-### Example response
+### Example Response
 
 ```
-----------------------------1614042244883000
+----------------------------071517909670537006900435
 Content-Disposition: form-data; name="name"
 
 My test post
-----------------------------1614042244883000
+----------------------------071517909670537006900435
 Content-Disposition: form-data; name="description"
 
 This is just a test post
@@ -53,7 +53,7 @@ Content-Disposition: form-data; name="image"; filename="hello.jpg"
 Content-Type: image/jpeg
 
 [BINARY IMAGE DATA]
-----------------------------1614042244883000--
+----------------------------071517909670537006900435--
 ```
 
 ## License
