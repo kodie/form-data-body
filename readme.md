@@ -1,7 +1,7 @@
 # form-data-body
 
 [![npm package version](https://img.shields.io/npm/v/form-data-body.svg?style=flat-square)](https://www.npmjs.com/package/form-data-body)
-[![Travis build status](https://img.shields.io/travis/kodie/form-data-body.svg?style=flat-square)](https://travis-ci.org/kodie/form-data-body)
+[![Travis build status](https://img.shields.io/travis/com/kodie/form-data-body.svg?style=flat-square)](https://travis-ci.com/kodie/form-data-body)
 [![npm package downloads](https://img.shields.io/npm/dt/form-data-body.svg?style=flat-square)](https://www.npmjs.com/package/form-data-body)
 [![code style](https://img.shields.io/badge/code_style-standard-yellow.svg?style=flat-square)](https://github.com/standard/standard)
 [![license](https://img.shields.io/github/license/kodie/form-data-body.svg?style=flat-square)](license.md)
