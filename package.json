@@ -1,0 +1,32 @@
+{
+  "name": "form-data-body",
+  "version": "0.0.1",
+  "description": "A tiny, dependency free node module for generating a form's multipart/form-data body for a POST request.",
+  "keywords": [
+    "body",
+    "data",
+    "fields",
+    "form",
+    "formdata",
+    "generate",
+    "multipart",
+    "parse",
+    "post",
+    "request"
+  ],
+  "author": {
+    "name": "Kodie Grantham",
+    "email": "kodie.grantham@gmail.com",
+    "url": "https://kodieg.com"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/kodie/form-data-body.git"
+  },
+  "bugs": {
+    "url": "https://github.com/kodie/form-data-body/issues"
+  },
+  "homepage": "https://github.com/kodie/form-data-body",
+  "license": "MIT",
+  "main": "index.js"
+}
